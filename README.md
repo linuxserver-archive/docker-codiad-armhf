@@ -64,6 +64,8 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application 
+`IMPORTANT... THIS IS THE ARMHF VERSION`
+
 * use /config/projects to save your projects, for data persistence
 * change /config/www/plugins/Codiad-CodeGit-master/shell.sh to add Git User/Pass
 * change /config/www/plugins/Codiad-Terminal-master/emulator/term.php to change terminal password
