@@ -6,15 +6,17 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# install packages
+# install packages
 RUN \
 apk add --no-cache \
 	git \
-	expect \
+	expect && \
+ apk add --no-cache \
+	--repository http://nl.alpinelinux.org/alpine/edge/community \
 	php7-ldap \
 	php7-zip
 
-# copy local files
+# copy local files
 COPY root/ /
 
 # ports and volumes
