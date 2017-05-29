@@ -86,5 +86,6 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Versions
 
++ **29.05.17:** Rebase to alpine 3.6.
 + **03.05.17:** Update to php 7.1x.
 + **07.03.17:** Initial Release
