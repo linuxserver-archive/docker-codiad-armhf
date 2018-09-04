@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.nginx.armhf:3.7
+FROM lsiobase/alpine.nginx.armhf:3.8
 
 # set version label
 ARG BUILD_DATE
@@ -9,12 +9,11 @@ LABEL maintainer="sparklyballs"
 RUN \
  echo "**** install package ****" && \
  apk add --no-cache \
-	git \
 	expect \
 	php7-ldap \
 	php7-zip
 
-# copy local files
+# copy local files
 COPY root/ /
 
 # ports and volumes
